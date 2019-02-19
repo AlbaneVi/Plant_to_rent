@@ -15,9 +15,14 @@ class PlantsController < ApplicationController
   def edit
   end
 
+  def update
+    @plant.update(plants_params)
+    redirect_to plant_path(@plant)
+  end
+
   def create
     @plant = Plant.new(plants_params)
-    # @plant.user = current_user
+    @plant.user = current_user
 
     if @plant.save!
       redirect_to plant_path(@plant)

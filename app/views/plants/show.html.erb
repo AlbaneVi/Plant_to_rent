@@ -10,7 +10,9 @@
 <%= @plant.created_at %>
 <%= @plant.updated_at%>
 <%= @plant.flowers%>
-<%= @plant.photo %>
+<%= cl_image_tag "#{@plant.photo}", :width=>100 %>
+
+
 
 
 
