@@ -1,0 +1,19 @@
+
+<h1>New plant</h1>
+<%= simple_form_for @plant do |f| %>
+  <%= f.input :name %>
+  <%= f.input :family %>
+  <%= f.input :description %>
+  <%= f.input :water %>
+  <%= f.input :sun  %>
+  <%= f.input :flowers  %>
+  <%= f.input :ext_int %>
+  <%= f.input :size_cm %>
+  <%= f.input :price_per_day %>
+  <% f.input :created_at  %>
+  <%= f.input :photo %>
+
+
+  <%= f.button :submit, class: 'btn btn-primary' %>
+<% end %>
+

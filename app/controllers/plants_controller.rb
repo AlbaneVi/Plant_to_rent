@@ -16,8 +16,10 @@ class PlantsController < ApplicationController
   end
 
   def create
-    @plant = Plant.create(plants_params)
-    if @plant.save
+    @plant = Plant.new(plants_params)
+    # @plant.user = current_user
+
+    if @plant.save!
       redirect_to plant_path(@plant)
     else
       render :new
@@ -36,8 +38,6 @@ class PlantsController < ApplicationController
   end
 
   def plants_params
-    plant_category = %i[name family description water sun ext_int
-                        size_cm price_per_day flowers user_id booking_id]
-    params.require(:plants).permit(plant_category)
+    params.require(:plant).permit(:name, :family, :description, :water, :sun, :ext_int, :size_cm, :price_per_day, :flowers, :photo, :booking_id)
   end
 end
