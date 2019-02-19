@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :plants  do
-    resources :bookings , only: [:index, :show, :delete]
+    resources :bookings , only: [:index, :show, :new, :create, :delete]
   end
   resources :users, except: [:index, :new, :create]
   devise_for :users
