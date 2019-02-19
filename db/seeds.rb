@@ -1,5 +1,5 @@
 
-user1 = User.new (email:"severine.courbon69@gmail.com",
+user1 = User.new(email: "severine.courbon69@gmail.com",
                   encrypted_password:"123456",
                   first_name: "Séverine",
                   last_name: "Courbon",
@@ -7,7 +7,7 @@ user1 = User.new (email:"severine.courbon69@gmail.com",
                   phone_number:"0612131415",
                   photo: "b0dbgw4klwrc0v0js2lq")
 
-user2 = User.new (email:"ahkoon.c@gmail.com",
+user2 = User.new(email:"ahkoon.c@gmail.com",
                   encrypted_password:"123456",
                   first_name: "Chloé",
                   last_name: "Ah-Koon",
@@ -15,7 +15,7 @@ user2 = User.new (email:"ahkoon.c@gmail.com",
                   phone_number:"0674749398",
                   photo: "wzjr3o6dyg6yrfqw5s7q")
 
-user3 = User.new (email:"emna.dridi29@gmail.com",
+user3 = User.new(email:"emna.dridi29@gmail.com",
                   encrypted_password:"123456",
                   first_name: "Emna",
                   last_name: "Dridi",
@@ -23,7 +23,7 @@ user3 = User.new (email:"emna.dridi29@gmail.com",
                   phone_number:"0678990398",
                   photo: "")
 
-user4 = User.new (email:"albane.villard@gmail.com",
+user4 = User.new(email:"albane.villard@gmail.com",
                   encrypted_password:"123456",
                   first_name: "Albane",
                   last_name: "Villard",
@@ -31,8 +31,7 @@ user4 = User.new (email:"albane.villard@gmail.com",
                   phone_number:"0678977422",
                   photo: "")
 
-
-plant1 = Plant.new (name: "citronnier",
+plant1 = Plant.new(name: "citronnier",
                     family: "arbre fruitier",
                     description: "bel arbre d'une vingtaine d'année",
                     water: "un peu",
@@ -44,7 +43,7 @@ plant1 = Plant.new (name: "citronnier",
                     flowers: true,
                     photo: "zpkqujudw9woz3o2kqzu")
 
-plant2 = Plant.new (name: "cactus",
+plant2 = Plant.new(name: "cactus",
                     family: "plantes grasses",
                     description: "du piquant !",
                     water: "un peu",
@@ -56,7 +55,7 @@ plant2 = Plant.new (name: "cactus",
                     flowers: false,
                     photo: "u4ytlcmwqwh4r2uuwyju")
 
-plant3 = Plant.new (name: "orchidée",
+plant3 = Plant.new(name: "orchidée",
                     family: "plantes fleuries",
                     description: "une floraison maginifique !",
                     water: "beaucoup",
@@ -68,7 +67,7 @@ plant3 = Plant.new (name: "orchidée",
                     flowers: true,
                     photo: "rbu6bbpgyorlb8fuueaw")
 
-plant4 = Plant.new (name: "rosier",
+plant4 = Plant.new(name: "rosier",
                     family: "arbuste",
                     description: "sympathique et romantique",
                     water: "un peu",
@@ -80,7 +79,7 @@ plant4 = Plant.new (name: "rosier",
                     flowers: true,
                     photo: "kzclwafhyczjkcrnnumg")
 
-plant5 = Plant.new (name: "monstera",
+plant5 = Plant.new(name: "monstera",
                     family: "plantes vertes",
                     description: "une plante monstrueuse !",
                     water: "un peu",
@@ -92,7 +91,7 @@ plant5 = Plant.new (name: "monstera",
                     flowers: false,
                     photo: "y3juzpzckf9c5qyokfn0")
 
-plant6 = Plant.new (name: "ficus benjamina",
+plant6 = Plant.new(name: "ficus benjamina",
                     family: "plantes vertes",
                     description: "plante prometteuse",
                     water: "un peu",

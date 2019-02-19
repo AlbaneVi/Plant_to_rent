@@ -1,0 +1,16 @@
+<p> ICI ON VERRA COMMENT FAIRE</p>
+
+<div>
+  <h2>Mes plantes</h1>
+  <% @user.plants.each do |plant| %>
+    <%= plant.family %>
+  <% end %>
+</div>
+
+<div>
+  <h2>Mes réservations</h2>
+  <% @user.bookings.each do |plant| %>
+    <%= booking.time %>
+    <%= booking.price %>
+  <% end %>
+</div>
