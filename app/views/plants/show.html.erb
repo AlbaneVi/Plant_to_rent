@@ -1,0 +1,22 @@
+<%= @plant.name %>
+<%= @plant.family %>
+<%= @plant.description %>
+<%= @plant.water %>
+<%= @plant.sun %>
+<%= @plant.ext_int%>
+<%= @plant.size_cm%>
+<%= @plant.price_per_day%>
+<%= @plant.user_id%>
+<%= @plant.created_at %>
+<%= @plant.updated_at%>
+<%= @plant.flowers%>
+<%= @plant.photo %>
+
+
+
+
+
+<%=link_to "Back to list", plants_path, class: 'btn btn-primary' %>
+<%=link_to "Edit", edit_plant_path(@plant),class: 'btn btn-primary' %>
+<%=link_to "Add plant", new_plant_path(@plant), class: 'btn btn-primary' %>
+<%=link_to "Delete", plants_path, class: 'btn btn-primary' %>
