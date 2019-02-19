@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_users, only: [:show, :edit, :destroy]
+  before_action :set_users, only: [:show, :edit]
 
   def show
     # set_users
@@ -9,10 +9,10 @@ class UsersController < ApplicationController
     # set_users
   end
 
-  def destroy
-    @user.destroy
-    redirect_to plants_path(@plant)
-  end
+  # def destroy
+  #   @user.destroy
+  #   redirect_to plants_path(@plant)
+  # end
 
   private
 

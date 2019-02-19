@@ -1,10 +1,22 @@
-<p> ICI ON VERRA COMMENT FAIRE</p>
+<div>
+  <p> Hello <%= @user.first_name %></p>
+</div>
 
 <div>
   <h2>Mes plantes</h1>
   <% @user.plants.each do |plant| %>
-    <%= plant.family %>
-  <% end %>
+    <%= cl_image_tag plant.photo %>
+    <ul>
+      <li><%= plant.family %></li>
+      <li><%= plant.flowers %></li>
+      <li><%= plant.description %></li>
+      <li><%= plant.water %></li>
+      <li><%= plant.sun %></li>
+      <li><%= plant.ext_int %></li>
+      <li><%= plant.size_cm %></li>
+      <li><%= plant.price_per_day %></li>
+    </ul>
+    <% end %>
 </div>
 
 <div>
