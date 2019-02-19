@@ -7,23 +7,22 @@ class BookingsController < ApplicationController
   end
 
   def show
-    @booking = Booking.new
   end
 
   def new
-
+    @plant = Plant.find(params[:plant_id])
+    @booking = Booking.new
   end
 
   def create
-
-  end
-
-  def edit
-
-  end
-
-  def update
-
+    @plant = Plant.find(params[:plant_id])
+    @booking = Booking.new(booking_params)
+    @booking.plant = @plant
+    if @booking.save
+      redirect_to plant_path
+    else
+      render :new
+    end
   end
 
   def destroy
