@@ -1,0 +1,29 @@
+<div>
+  <p> Hello <%= @user.first_name %> !</p>
+</div>
+
+<div>
+  <h2>Mes plantes</h1>
+  <% @user.plants.each do |plant| %>
+    <%= cl_image_tag plant.photo %>
+    <ul>
+      <li><%= plant.family %></li>
+      <li><%= plant.flowers %></li>
+      <li><%= plant.description %></li>
+      <li><%= plant.water %></li>
+      <li><%= plant.sun %></li>
+      <li><%= plant.ext_int %></li>
+      <li><%= plant.size_cm %></li>
+      <li><%= plant.size_cm %></li>
+      <li><%= plant.price_per_day %></li>
+    </ul>
+    <% end %>
+</div>
+
+<div>
+  <h2>Mes réservations</h2>
+  <% @user.bookings.each do |plant| %>
+    <%= booking.time %>
+    <%= booking.price %>
+  <% end %>
+</div>

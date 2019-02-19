@@ -10,13 +10,15 @@
 <%= @plant.created_at %>
 <%= @plant.updated_at%>
 <%= @plant.flowers%>
-<%= @plant.photo %>
+
+<%= cl_image_tag "#{@plant.photo}", :width=>100 %>
+
+
+
 
 
 
 
 
 <%=link_to "Back to list", plants_path, class: 'btn btn-primary' %>
-<%=link_to "Edit", edit_plant_path(@plant),class: 'btn btn-primary' %>
-<%=link_to "Add plant", new_plant_path(@plant), class: 'btn btn-primary' %>
-<%=link_to "Delete", plants_path, class: 'btn btn-primary' %>
+
