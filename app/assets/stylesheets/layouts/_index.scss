@@ -3,6 +3,8 @@
 // @import "dashboard";
 // @import "profile";
 // @import "map";
+@import "show";
+
 .wrapper {
   background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.2)),
     url('https://res.cloudinary.com/dvvkrrjc4/image/upload/v1550607011/background.jpg');
@@ -10,4 +12,9 @@
     background-size: cover;
     background-position: center;
 
+}
+
+body {
+  font-family: $body-font;
+  color: $text;
 }
