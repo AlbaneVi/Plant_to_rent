@@ -7,12 +7,17 @@
 .photo-container {
   flex: 0 0 25%;
   background-color: red;
-
 }
 
 .plant-details {
   flex: 0 0 45%;
-  background-color: blue;
+  background-color: $light-gray;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 10px;
+  padding-top: 10px;
+  margin: 20px;
+  border-radius: 5px;
 }
 
 .book-and-back {
@@ -20,3 +25,14 @@
   background-color: yellow;
 }
 
+.detail {
+  padding-top: 8px;
+}
+
+#motproprio {
+  background-color: white;
+  font-weight: lighter;
+  margin : 6px;
+  text-align: right;
+  border-radius: 5px;
+}

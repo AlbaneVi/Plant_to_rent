@@ -7,18 +7,18 @@
   </div>
 
   <div class="plant-details">
-    <ul>
-      <li><%= @plant.name %></li>
-      <br>
-      <li><%= @plant.family %></li>
-      <br>
-      <li><%= @plant.water %></li>
-      <li><%= @plant.sun %></li>
-      <li><%= @plant.ext_int%></li>
-      <li><%= @plant.size_cm%></li>
-      <li><%= @plant.flowers%></li>
-      <li><%= @plant.description %></li>
-    </ul>
+      <h2 class="detail" id="name"><%= @plant.name %></h2>
+      <div class="detail" id="family"><%= @plant.family %></div>
+      <div class="detail">J'aime <%= @plant.water %> l'eau et <%= @plant.sun %> le soleil
+      </div>
+      <div class="detail">Je me plais à l'<%= @plant.ext_int%></div>
+      <div class="detail">Je mesure <%= @plant.size_cm%> centimtres</div>
+      <div class="detail">J'ai plein de fleurs : <%= @plant.flowers%></div>
+       <br>
+       <br>
+      <div class="detail" id="motproprio">Un petit mot de mon propriétaire...
+        <br>
+        "<%= @plant.description %>"</div>
   </div>
 
   <div class="book-and-back">
