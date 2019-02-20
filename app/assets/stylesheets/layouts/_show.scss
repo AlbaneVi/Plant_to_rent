@@ -11,13 +11,20 @@
 
 .plant-details {
   flex: 0 0 45%;
-  background-color: $light-gray;
+  height: 80vh;
+  background-color: #F5F6F7;
   padding-left: 20px;
   padding-right: 20px;
-  padding: 10px;
-  padding-top: 10px;
+  padding-bottom: 10px;
   margin: 20px;
   border-radius: 5px;
+  h2 {
+    text-align:right;
+  }
+  #family{
+    text-align:right;
+    color: #A7D7C5;
+  }
 }
 
 .book-and-back {
@@ -30,9 +37,13 @@
 }
 
 #motproprio {
-  background-color: white;
-  font-weight: lighter;
+  font-style: italic;
   margin : 6px;
   text-align: right;
-  border-radius: 5px;
+}
+
+#description {
+  font-style: italic;
+  margin : 6px;
+  text-align: right;
 }

@@ -9,16 +9,13 @@
   <div class="plant-details">
       <h2 class="detail" id="name"><%= @plant.name %></h2>
       <div class="detail" id="family"><%= @plant.family %></div>
-      <div class="detail">J'aime <%= @plant.water %> l'eau et <%= @plant.sun %> le soleil
-      </div>
-      <div class="detail">Je me plais à l'<%= @plant.ext_int%></div>
-      <div class="detail">Je mesure <%= @plant.size_cm%> centimtres</div>
-      <div class="detail">J'ai plein de fleurs : <%= @plant.flowers%></div>
-       <br>
-       <br>
-      <div class="detail" id="motproprio">Un petit mot de mon propriétaire...
-        <br>
-        "<%= @plant.description %>"</div>
+      <div class="detail" id="water"><%= @plant.water %></div>
+      <div class="detail" id="sun"><%= @plant.sun %></div>
+      <div class="detail" id="ext_int"><%= @plant.ext_int%></div>
+      <div class="detail" id="size"><%= @plant.size_cm%></div>
+      <div class="detail" id="flowers"><%= @plant.flowers%></div>
+      <div class="detail" id="motproprio">Un petit mot de mon propriétaire...</div>
+      <div class="detail" id="description">"<%= @plant.description %>"</div>
   </div>
 
   <div class="book-and-back">
