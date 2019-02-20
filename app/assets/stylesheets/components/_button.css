@@ -1,0 +1,20 @@
+.button {
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: $title;
+  font-family: $body-font;
+  font-size: 14px;
+  padding: 10 5px;
+  width: 120px;
+  font-weight: 100;
+}
+.button:hover {
+  text-decoration: none;
+  color: $title;
+  background-color: #fff;
+  border: 1px solid $title;
+ }
+
+/*code html pour button :
+<a href="#" class="button">Supprimer</a>*/
