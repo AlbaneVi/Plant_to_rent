@@ -1,9 +1,7 @@
 <div class="container-show">
 
   <div class="photo-container">
-    <p id="plant_photo" >
-      <%= cl_image_tag "#{@plant.photo}", :width=>100 %>
-    </p>
+   <%= cl_image_tag "#{@plant.photo}", class:"plant-photo"%>
   </div>
 
   <div class="plant-details">
