@@ -1,12 +1,12 @@
-<div class="container">
+<div class="container-show">
 
-  <div class="photo_container">
+  <div class="photo-container">
     <p id="plant_photo" >
       <%= cl_image_tag "#{@plant.photo}", :width=>100 %>
     </p>
   </div>
 
-  <div class="plant_details">
+  <div class="plant-details">
     <ul>
       <li><%= @plant.name %></li>
       <br>
@@ -21,7 +21,7 @@
     </ul>
   </div>
 
-  <div class="book_and_back">
+  <div class="book-and-back">
     <%= @plant.price_per_day%>
 <p>formulaire</p>
     <%=link_to "Back to list", plants_path, class: 'btn btn-primary' %>
