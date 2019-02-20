@@ -1,24 +1,31 @@
-<%= @plant.name %>
-<%= @plant.family %>
-<%= @plant.description %>
-<%= @plant.water %>
-<%= @plant.sun %>
-<%= @plant.ext_int%>
-<%= @plant.size_cm%>
-<%= @plant.price_per_day%>
-<%= @plant.user_id%>
-<%= @plant.created_at %>
-<%= @plant.updated_at%>
-<%= @plant.flowers%>
+<div class="container">
 
-<%= cl_image_tag "#{@plant.photo}", :width=>100 %>
+  <div class="photo_container">
+    <p id="plant_photo" >
+      <%= cl_image_tag "#{@plant.photo}", :width=>100 %>
+    </p>
+  </div>
 
+  <div class="plant_details">
+    <ul>
+      <li><%= @plant.name %></li>
+      <br>
+      <li><%= @plant.family %></li>
+      <br>
+      <li><%= @plant.water %></li>
+      <li><%= @plant.sun %></li>
+      <li><%= @plant.ext_int%></li>
+      <li><%= @plant.size_cm%></li>
+      <li><%= @plant.flowers%></li>
+      <li><%= @plant.description %></li>
+    </ul>
+  </div>
 
+  <div class="book_and_back">
+    <%= @plant.price_per_day%>
+<p>formulaire</p>
+    <%=link_to "Back to list", plants_path, class: 'btn btn-primary' %>
 
+  </div>
 
-
-
-
-
-<%=link_to "Back to list", plants_path, class: 'btn btn-primary' %>
-
+</div>
