@@ -8,3 +8,25 @@
   <li><%= link_to plant.name, plant_path(plant)%></li>
 <% end %>
 </ul>
+
+<div class="cards">
+  <% @plants.each do |plant| %>
+
+  <div class="card">
+
+    <div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+         url('<%= cl_image_path plant.photo, height: 300, width: 400, crop: :fill %>')">
+    </div>
+
+        <div class="card-txt">
+            <p><%= plant.family %></p>
+            <h3><%= plant.name %></h3>
+                <div class="price">
+                  <p><%= plant.price_per_day %> € /jour</p>
+                </div>
+        </div>
+
+  </div>
+
+  <% end %>
+</div>
