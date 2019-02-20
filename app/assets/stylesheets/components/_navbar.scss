@@ -11,15 +11,29 @@
 }
 
 /* Logo */
-.navbar-wagon-brand img {
-  height: 50px;
+// .navbar-wagon-brand img {
+//   height: 50px;
+// }
+
+.navbar-wagon-logo {
+  font-size: 28px;
+  font-family: $headers-font;
+  color: $title;
 }
+.navbar-wagon-logo:hover {
+  text-decoration: none;
+  color: #70a4a0
+}
+
 
 /* User Avatar */
 .navbar-wagon .avatar {
   height: 35px;
   width: 35px;
   border-radius: 50%;
+  border: 1px solid $avatar-outline;
+  text-align: center;
+  padding-top: 5px;
 }
 
 /* Right section */
@@ -37,11 +51,11 @@
 
 /* Navbar link */
 .navbar-wagon-link {
-  color: #616668;
+  color: #a7a7a7;
   font-size: 14px;
 }
 .navbar-wagon-link:hover {
-  color: #da552f;
+  color: #747474;
   text-decoration: none;
 }
 

@@ -7,8 +7,8 @@ user1 = User.new(email:"severine.courbon69@gmail.com",
                   first_name: "Séverine",
                   last_name: "Courbon",
                   address:"Lyon",
-                  phone_number:"0612131415")
-user1.remote_photo_url = "https://res.cloudinary.com/dvvkrrjc4/image/upload/v1550584222/b0dbgw4klwrc0v0js2lq.jpg"
+                  phone_number:"0612131415",
+                  remote_photo_url: "https://res.cloudinary.com/dvvkrrjc4/image/upload/v1550584222/b0dbgw4klwrc0v0js2lq.jpg")
 user1.save!
 
 user2 = User.create!(email:"ahkoon.c@gmail.com",
@@ -16,9 +16,8 @@ user2 = User.create!(email:"ahkoon.c@gmail.com",
                   first_name: "Chloé",
                   last_name: "Ah-Koon",
                   address:"Lyon",
-                  phone_number:"0674749398")
-user2.remote_photo_url = "https://res.cloudinary.com/dvvkrrjc4/image/upload/v1550584231/wzjr3o6dyg6yrfqw5s7q.jpg"
-user2.save!
+                  phone_number:"0674749398",
+                  remote_photo_url: "https://res.cloudinary.com/dvvkrrjc4/image/upload/v1550584231/wzjr3o6dyg6yrfqw5s7q.jpg")
 
 user3 = User.create!(email:"emna.dridi29@gmail.com",
                   password:"123456",
