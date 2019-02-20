@@ -1,8 +1,27 @@
-<h1> Plants </h1>
 
 
-<ul>
-<% @plants.each do |plant| %>
-  <li><%= link_to plant.name, plant_path(plant)%></li>
-<% end %>
-</ul>
+  <div class="cards">
+    <% @plants.each do |plant| %>
+    <div class="card">
+      <div class="card-img" style="background-image: url('<%= cl_image_path plant.photo,  crop: :fill %>')">
+      </div>
+          <div class="card-txt">
+              <p><%= plant.family.capitalize %></p>
+              <h3><%= plant.name.capitalize %></h3>
+                  <div class="price">
+                    <p><%= plant.price_per_day %>  € <span>/jour</span></p>
+                  </div>
+
+
+
+                  <% avatar_style = plant.user.photo.blank? ? "" : "background-image: url('#{cl_image_path plant.user.photo,  crop: :fill}')" %>
+
+                  <div class="card-avatar" style="<%= avatar_style %>">
+                  </div>
+          </div>
+          <%= link_to " ", plant_path(plant), class: "card-link" %>
+
+    </div>
+    <% end %>
+  </div>
+

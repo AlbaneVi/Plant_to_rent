@@ -1,0 +1,80 @@
+.cards{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.card{
+width: 200px;
+height: 330px;
+background-color: #fff;
+margin: 30px 20px;
+box-shadow: 5px 7px 20px 0px rgba(0,0,0,0.16);
+position: relative;
+
+}
+.card-img{
+  width: 200px;
+  height: 270px;
+background-position: center;
+background-size: cover;
+}
+.card-txt{
+  height: 50px;
+  padding: 5px 0 0 10px;
+
+}
+.card-txt p{
+  font-size: 12px;
+  color: $text-menu;
+  font-family: $body-font;
+  margin: 0;
+  padding: 10px 0 0 0px;
+}
+.card-txt h3{
+  font-size: 18px;
+  color: $title;
+  font-family: $headers-font;
+    margin: 0;
+  padding: 0;
+}
+.price p{
+  font-size: 14px;
+  font-family: $body-font;
+  color: #000;
+    margin: 0;
+  padding: 0;
+}
+.price span{
+  font-size: 12px;
+}
+.price {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover {
+  opacity: 0.1;
+}
+.card-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid $avatar-outline;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+}
