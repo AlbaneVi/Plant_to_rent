@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items : center;
+}
+
+.photo_container {
+  flex: 0 0 25%;
+  background-color: red;
+
+}
+
+.plant_details {
+  flex: 0 0 45%;
+  background-color: blue;
+}
+
+.book_and_back {
+  flex: 0 0 25%;
+  background-color: yellow;
+}
+
+#plant_photo {
+  width: 120px;
+  height: 80vh;
+}
