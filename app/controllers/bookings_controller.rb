@@ -12,7 +12,6 @@ class BookingsController < ApplicationController
   def new
     @plant = Plant.find(params[:plant_id])
     @booking = Booking.new
-
   end
 
   def create
