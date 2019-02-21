@@ -55,13 +55,16 @@
   </div>
 
   <div class="book-and-back">
-
-  <h1>New booking</h1>
+    <% if @plant.user_id != current_user.id  %>
+<h1>New booking</h1>
   <%= @plant.price_per_day%> €/jour
   <%= simple_form_for ([@plant, @booking]) do |f| %>
   <%= f.input :time %>
   <%= f.button :submit , class: 'btn btn-success'  %>
   <% end %>
+  <% end %>
+
+
 
 
 
@@ -70,4 +73,13 @@
 
 </div>
 </div>
+
+ <div class= "button-edit-delete">
+  <% if @plant.user_id == current_user.id %>
+  <%=link_to "Modifier", edit_plant_path, class: 'button' %>
+  <%=link_to "Supprimer", plants_path, class: 'button' %>
+  <% end %>
+  </div>
+
+
 
