@@ -1,5 +1,5 @@
 class PlantsController < ApplicationController
-  before_action :set_plants, only: %i[show edit destroy]
+  before_action :set_plants, only: %i[show edit update destroy]
 
   def index
     @plants = Plant.all
@@ -7,6 +7,7 @@ class PlantsController < ApplicationController
   end
 
   def show
+
     @booking = Booking.new
   end
 

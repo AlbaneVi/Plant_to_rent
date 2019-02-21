@@ -56,17 +56,19 @@
 
   <div class="book-and-back">
 
+
   <div class="prix">
     <p id="prixeneuros"><%= @plant.price_per_day%> €</p>
     <p>/ jour</p>
   </div>
-
+  <% if @plant.user_id != current_user.id  %>
   <div class="formbooking">
   <p> Je souhaite louer cette plante. Elle me sera livrée à l'adresse et au jour de mon choix.</p>
   <div id="form"><%= simple_form_for ([@plant, @booking]) do |f| %>
   <%= f.input :time , label:"Nombre de jours" %>
   <%= f.button :submit ,"Réserver", class: 'button'  %>
   <% end %>
+   <%end>
   </div>
 </div>
 </div>
@@ -76,4 +78,13 @@
 
 
 </div>
+
+ <div class= "button-edit-delete">
+  <% if @plant.user_id == current_user.id %>
+  <%=link_to "Modifier", edit_plant_path, class: 'button' %>
+  <%=link_to "Supprimer", plants_path, class: 'button' %>
+  <% end %>
+  </div>
+
+
 
