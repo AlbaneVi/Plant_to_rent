@@ -1,13 +1,20 @@
 /* Main navbar */
-.navbar-wagon {
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+.navbar-container {
   background: white;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
   transition: all 0.3s ease;
+}
+.navbar-wagon {
+
+
+
   height: 70px;
   padding: 0px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 1170px;
+  margin:0 auto;
 }
 
 /* Logo */
@@ -16,9 +23,10 @@
 // }
 
 .navbar-wagon-logo {
-  font-size: 28px;
+  font-size: 35px;
   font-family: $headers-font;
   color: $title;
+  font-weight: 400;
 }
 .navbar-wagon-logo:hover {
   text-decoration: none;
@@ -26,14 +34,14 @@
 }
 
 
+
 /* User Avatar */
 .navbar-wagon .avatar {
-  height: 35px;
-  width: 35px;
+  height: 45px;
+  width: 45px;
   border-radius: 50%;
   border: 1px solid $avatar-outline;
   text-align: center;
-  padding-top: 5px;
 }
 
 /* Right section */
@@ -51,8 +59,9 @@
 
 /* Navbar link */
 .navbar-wagon-link {
-  color: #a7a7a7;
-  font-size: 14px;
+  color: $text-menu;
+  font-size: 15px;
+  font-weight: 100;
 }
 .navbar-wagon-link:hover {
   color: #747474;
@@ -88,4 +97,19 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+.btn-connect {
+  color: $text-menu;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-family: $body-font;
+  font-size: 15px;
+  padding: 10px 15px;
+  font-weight: 100;
+  border: 1px solid $text-menu;
+}
+.btn-connect:hover {
+
+  border: 1px solid $text;
 }
