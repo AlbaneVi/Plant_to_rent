@@ -1,17 +1,13 @@
+ <div class="navbar-container">
  <div class="navbar-wagon">
   <!-- Logo -->
-
-    <%= link_to "Plant to rent", root_path, class: "navbar-wagon-logo"%>
-
+  <%= link_to "Plant to rent", root_path, class: "navbar-wagon-logo"%>
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-
     <% if user_signed_in? %>
-
       <!-- Links when logged in -->
-      <%= link_to "Mes réservations", user_path(current_user), class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Mes plantes", user_path(current_user), class: "navbar-wagon-item navbar-wagon-link" %>
 
+      <%= link_to "Mes plantes", user_path(current_user), class: "navbar-wagon-item navbar-wagon-link" %>
       <!-- Avatar with dropdown menu -->
       <div class="navbar-wagon-item">
         <div class="dropdown">
@@ -36,7 +32,7 @@
       </div>
     <% else %>
       <!-- Login link (when logged out) -->
-      <%= link_to t(".sign_in", default: "Connexion | Inscription"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t(".sign_in", default: "Se connecter | S'inscrire"), new_user_session_path, class: "btn-connect navbar-wagon-item navbar-wagon-link " %>
     <% end %>
   </div>
 
@@ -52,4 +48,4 @@
     </div>
   </div>
 </div>
-
+</div>
