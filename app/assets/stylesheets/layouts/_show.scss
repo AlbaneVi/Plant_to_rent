@@ -7,6 +7,13 @@
 .photo-container {
   flex: 0 0 25%;
 
+  .plant-photo{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #5C8D89;
+  }
+
 }
 
 .plant-details {
@@ -18,12 +25,112 @@
   padding-bottom: 10px;
   margin: 20px;
   border-radius: 5px;
-  h2 {
+
+  .namefamily {
     text-align:right;
+
+    h2 {
+      margin-bottom: 0px;
+      padding-bottom: 2px;
+    }
+
+    #family{
+      margin-top: 0px;
+      padding-top: 0px;
+      color: #A7D7C5;
+    }
   }
-  #family{
-    text-align:right;
-    color: #A7D7C5;
+
+  .titreentretien {
+    padding-bottom: 0px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+
+  .infos {
+    display: flex;
+    height: 220px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size : 16px;
+
+    .entretien {
+      display: flex;
+      flex-direction: column;
+      background-color: #FFF;
+      flex: 0 0 45%;
+      border-radius: 5px;
+      padding: 10px 10px;
+
+      .textcentre {
+        text-align: center;
+      }
+
+      #water {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding: 10px;
+        margin-top: 8px;
+        border: 1px solid #5C8D89;
+        border-radius: 5px;
+      }
+
+      #sun {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding: 10px;
+        margin-top: 8px;
+        border: 1px solid #5C8D89;
+        border-radius: 5px;
+      }
+    }
+
+    .localisation {
+      display: flex;
+      flex-direction: column;
+      background-color: #FFF;
+      flex: 0 0 45%;
+      border-radius: 5px;
+      padding: 10px 10px;
+
+      .textcentre {
+        text-align: center;
+      }
+
+      #ext_int {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding: 10px;
+        margin-top: 8px;
+        border: 1px solid #5C8D89;
+        border-radius: 5px;
+      }
+
+      #size {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding: 10px;
+        margin-top: 8px;
+        border: 1px solid #5C8D89;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .citation {
+  margin : 6px;
+
+    #motproprio {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    #description {
+      padding: 10px;
+      font-style: italic;
+    }
   }
 }
 
@@ -32,26 +139,8 @@
   background-color: yellow;
 }
 
-.plant-photo{
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  border: 3px solid #A7D7C5;
-}
 
-.detail {
-  padding-top: 8px;
-}
 
-#motproprio {
-  font-style: italic;
-  margin : 6px;
-  text-align: right;
-}
 
-#description {
-  font-style: italic;
-  margin : 6px;
-  text-align: right;
-}
+
 
