@@ -5,15 +5,52 @@
   </div>
 
   <div class="plant-details">
-      <h2 class="detail" id="name"><%= @plant.name %></h2>
-      <div class="detail" id="family"><%= @plant.family %></div>
-      <div class="detail" id="water"><%= @plant.water %></div>
-      <div class="detail" id="sun"><%= @plant.sun %></div>
-      <div class="detail" id="ext_int"><%= @plant.ext_int%></div>
-      <div class="detail" id="size"><%= @plant.size_cm%></div>
-      <div class="detail" id="flowers"><%= @plant.flowers%></div>
-      <div class="detail" id="motproprio">Un petit mot de mon propriétaire...</div>
-      <div class="detail" id="description">"<%= @plant.description %>"</div>
+
+
+    <div class="namefamily">
+      <h2 id="name"><%= @plant.name %></h2>
+      <p id="family"><%= @plant.family %></p>
+    </div>
+
+    <div class="titreentretien">
+      <p> Entretien </p>
+    </div>
+
+
+
+    <div class="infos">
+
+      <div class="entretien">
+
+        <div id="water"><p><i class="fas fa-tint"></i>  eau </p>
+          <p class="textcentre"><%= @plant.water %></p>
+        </div>
+
+        <div id="sun"><p><i class="fas fa-sun"></i>  soleil</p>
+          <p class="textcentre"><%= @plant.sun %></p>
+        </div>
+
+      </div>
+
+      <div class="localisation">
+
+        <div id="ext_int"><p><i class="fas fa-thermometer-half"></i>  emplacement</p>
+          <p class="textcentre"><%= @plant.ext_int%></p>
+        </div>
+
+        <div id="size"><p><i class="fas fa-ruler-combined"></i>  taille</p>
+          <p class="textcentre"><%= @plant.size_cm%> centimètres</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="citation">
+      <div id="motproprio">Un petit mot de mon propriétaire...</div>
+      <div id="description">"<%= @plant.description %>"</div>
+    </div>
+
 
   </div>
 

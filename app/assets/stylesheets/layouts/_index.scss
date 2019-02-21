@@ -4,6 +4,7 @@
 // @import "profile";
 // @import "map";
 @import "show";
+@import "show-user";
 
 .wrapper {
   background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.2)),
@@ -17,4 +18,9 @@
 body {
   font-family: $body-font;
   color: $text;
+}
+
+h2 {
+  color: $title;
+
 }

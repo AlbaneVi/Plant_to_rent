@@ -1,29 +1,40 @@
-<div>
-  <p> Hello <%= @user.first_name %> !</p>
-</div>
 
-<div>
-  <h2>Mes plantes</h1>
+  <p class="welcome">Bienvenue <strong><%= @user.first_name %></strong> sur votre espace !</p>
+
+<h3 class="title-user">Mes plantes</h3>
+<div class="cards">
   <% @user.plants.each do |plant| %>
-    <%= cl_image_tag plant.photo %>
-    <ul>
-      <li><%= plant.family %></li>
-      <li><%= plant.flowers %></li>
-      <li><%= plant.description %></li>
-      <li><%= plant.water %></li>
-      <li><%= plant.sun %></li>
-      <li><%= plant.ext_int %></li>
-      <li><%= plant.size_cm %></li>
-      <li><%= plant.size_cm %></li>
-      <li><%= plant.price_per_day %></li>
-    </ul>
-    <% end %>
+  <div class="card">
+    <div class="card-img" style="background-image: url('<%= cl_image_path plant.photo,  crop: :fill %>')">
+    </div>
+      <div class="card-txt">
+        <p><%= plant.family.capitalize %></p>
+          <h3><%= plant.name.capitalize %></h3>
+            <div class="price">
+              <p><%= plant.price_per_day %>  € <span>/jour</span></p>
+            </div>
+      </div>
+        <%= link_to " ", plant_path(plant), class: "card-link" %>
+  </div>
+  <% end %>
+  <div class="card empty">
+    <div class="add-body">
+      <div class="circle-add">
+        <h1>+</h1>
+      </div>
+      <p>ajouter une plante</p>
+    </div>
+    <%= link_to " ", new_plant_path, class: "card-link" %>
+  </div>
 </div>
 
 <div>
-  <h2>Mes réservations</h2>
+  <h3 class="title-user">Mes réservations</h3>
   <% @user.bookings.each do |plant| %>
     <%= booking.time %>
     <%= booking.price %>
   <% end %>
 </div>
+
+
+
