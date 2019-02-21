@@ -1,19 +1,50 @@
 
-<h1>New plant</h1>
-<%= simple_form_for @plant do |f| %>
-  <%= f.input :name %>
-  <%= f.input :family %>
-  <%= f.input :description %>
-  <%= f.input :water %>
-  <%= f.input :sun  %>
-  <%= f.input :flowers  %>
-  <%= f.input :ext_int %>
-  <%= f.input :size_cm %>
-  <%= f.input :price_per_day %>
-  <% f.input :created_at  %>
-  <%= f.input :photo %>
 
 
-  <%= f.button :submit, class: 'button' %>
-<% end %>
+<div class="row">
+  <div class="col-sm-4 col-sm-offset-4">
+    <div class="form ">
 
+      <h3 class="text-center">Ajouter une plante</h3>
+
+        <%= simple_form_for @plant do |f| %>
+        <div class="label-form">
+          <%= f.input :name %>
+        </div>
+
+        <div class="select-form">
+          <%= f.select :family, { 'plantes grasses' => "plantes grasses", 'plantes vertes' => "plantes vertes", 'plantes fleuries' => "plantes fleuries", 'arbustes' => "arbustes", 'arbres fruitiers' => "arbres fruitiers"}, include_blank: false, :label => "Famille", :prompt => "-- Type de plante --" %>
+        </div>
+
+        <div class="label-form">
+          <%= f.input :description %>
+        </div>
+        <div class="select-form">
+          <%= f.select :water, { 'un peu' => "un peu", 'beaucoup' => "beaucoup", 'passionnément' => "passionnément", 'à la folie' => "à la folie"}, include_blank: false, :label => "Eau", :prompt => "-- Quantité d'eau --" %>
+        </div>
+        <div class="select-form">
+          <%= f.select :sun, { 'un peu' => "un peu", 'beaucoup' => "beaucoup", 'passionnément' => "passionnément", 'à la folie' => "à la folie"}, include_blank: false, :label => "Soleil", :prompt => "-- Ensoleillement --" %>
+        </div>
+        <div class="select-form">
+          <%= f.select :ext_int, { 'intérieur' => "un peu", 'extérieur' => "extérieur"}, include_blank: false, :label => "Emplacement", :prompt => "-- Emplacement --" %>
+        </div>
+        <div class="label-form">
+          <%= f.input :size_cm %>
+        </div>
+        <div class="label-form">
+          <%= f.input :price_per_day %>
+        </div>
+          <% f.input :created_at  %>
+          <div class="label-form">
+          <%= f.input :photo %>
+          </div>
+          <div class="text-center">
+          <%= f.button :submit,"Ajouter",  class: 'button' %>
+
+          </div>
+        <% end %>
+      </div>
+
+</div><!-- end col -->
+
+</div><!-- end row -->

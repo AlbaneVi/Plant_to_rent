@@ -33,4 +33,19 @@ en:
   activerecord:
     attributes:
       plant:
-        name: "Handle"
+        name: "Nom"
+        family: "Famille"
+        water: "eau"
+        sun: "soleil"
+        ext_int: "Emplacement"
+        size_cm: "Taille (cm)"
+        price_per_day: "Prix (par jour)"
+        photo: "Télécharger une photo"
+    hints:
+      plant:
+        photo: "ggg"
+
+
+
+
+
