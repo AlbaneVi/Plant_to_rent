@@ -1,6 +1,6 @@
 class BookingsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_booking, only: [:show, :destroy]
+  before_action :set_booking, only: [:show, :new, :destroy]
 
   def index
     @bookings = Booking.all
@@ -18,10 +18,12 @@ class BookingsController < ApplicationController
     @plant = Plant.find(params[:plant_id])
     @booking = Booking.new(booking_params)
     @booking.plant = @plant
+    @booking.save
+    @booking.user = current_user
     if @booking.save
-      redirect_to plant_path
+      redirect_to plants_path
     else
-      render :new
+      redirect_to plants_path(@plant)
     end
   end
 
@@ -33,7 +35,7 @@ class BookingsController < ApplicationController
   private
 
   def booking_params
-    params.require(:booking).permit(:time, :name, :price, :user_id, :plant_id)
+    params.require(:booking).permit(:time, :price, :user_id, :plant_id)
   end
 
   def set_booking
