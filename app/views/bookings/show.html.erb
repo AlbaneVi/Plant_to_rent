@@ -1,12 +1,10 @@
-<%= @booking.time %>
-<%= @booking.name %>
-<%= @booking.price %>
-<%= @booking.user_id %>
-<%= @booking. plant_id %>
-<% @booking.created_at%>
+<h1> Mes réservations </h1>
+
+
+  <% @bookings.each do |booking| %>
+
+  <% end %>
 
 
 
-<%=link_to "Back to list", plant_bookings_path, class: 'btn btn-primary' %>
-<%=link_to "Book a plant", new_plant_path(@plant), class: 'btn btn-primary' %>
-<%=link_to "Delete", plants_path, class: 'btn btn-primary' %>
+
