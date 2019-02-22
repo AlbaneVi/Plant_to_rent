@@ -13,6 +13,14 @@
 
   <div class="plant-details">
 
+    <% if current_user == nil %>
+      <% elsif @plant.user_id == current_user.id  %>
+      <div class="prix-user">
+        <p id="prix-modif"><%= @plant.price_per_day%> €</p>
+        <p>/ jour</p>
+      </div>
+      <% end %>
+
     <div class="namefamily">
       <h2 id="name"><%= @plant.name %></h2>
       <p id="family"><%= @plant.family %></p>
@@ -85,10 +93,7 @@
   <% elsif @plant.user_id == current_user.id  %>
     <div class="profile">
 
-      <div class="prix">
-        <p id="prixeneuros"><%= @plant.price_per_day%> €</p>
-        <p>/ jour</p>
-      </div>
+
 
       <div class="mon-profil">
 

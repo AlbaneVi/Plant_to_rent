@@ -31,7 +31,31 @@
   margin: 20px;
   border-radius: 5px;
   box-shadow: 5px 7px 20px 0px rgba(0,0,0,0.16);
+  position: relative;
 
+   p {
+    padding: 0px;
+    margin: 0px;
+  }
+  .prix-user {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 1px solid $avatar-outline;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #fff;
+  background-position: center;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+
+    #prix-modif {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  }
   .namefamily {
     text-align:right;
 
@@ -45,11 +69,6 @@
       padding-top: 0px;
       color: #A7D7C5;
     }
-  }
-
-  .titreentretien {
-    padding-bottom: 0px;
-    margin: 50px 25px 0px 25px;
   }
 
   .infos {
@@ -72,7 +91,7 @@
       flex: 0 0 45%;
       border-radius: 5px;
       padding: 10px 10px;
-           margin-left: 10px;
+      margin-left: 10px;
       margin-right: 10px;
 
       .textcentre {
@@ -156,8 +175,8 @@
     }
 
     .button-edit {
-    margin-top: 50px;
-    margin-bottom: auto;
+    margin-top: 20px;
+
     text-align: center;
     }
   }
@@ -257,7 +276,7 @@
   }
 
   .mon-profil {
-    margin-top: 110px;
+    margin-top: 80px;
     margin-bottom: 10px;
     text-align: center;
 
