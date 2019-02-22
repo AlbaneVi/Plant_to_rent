@@ -94,8 +94,8 @@
 
         <p id="titre-profile">Mon profil</p>
 
-        <div id="user-photo">
-          <%= current_user.avatar %>
+        <div>
+          <%= cl_image_tag current_user.photo, id:"user-photo" %>
         </div>
 
         <div id="user-mail">
