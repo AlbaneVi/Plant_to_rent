@@ -8,5 +8,6 @@
         <p><strong><%= booking.time * booking.plant.price_per_day %>€</strong></p>
         <%=link_to "Réserver à nouveau", plant_bookings_path, class: 'btn-booking', id:"button-right" %>
       </div>
+      <%= link_to " ", plant_path(booking.plant), class: "card-link" %>
     </div>
   <% end %>
