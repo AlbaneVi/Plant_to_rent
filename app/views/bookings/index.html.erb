@@ -6,7 +6,7 @@
         <h2><%= booking.plant.name%></h2>
         <p><%= booking.plant.family%></p>
         <p><strong><%= booking.time * booking.plant.price_per_day %>€</strong></p>
-        <%=link_to "Réserver à nouveau", plant_bookings_path, class: 'button', id:"button-right" %>
+        <%=link_to "Réserver à nouveau", plant_bookings_path, class: 'btn-booking', id:"button-right" %>
       </div>
     </div>
   <% end %>
