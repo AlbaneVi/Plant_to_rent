@@ -11,7 +11,7 @@
             <div class="price">
               <p><%= plant.price_per_day %>  € <span>/jour</span></p>
             </div>
-            <% avatar_style = plant.user.photo.blank? ? "" : "background-image: url('#{cl_image_path plant.user.photo,  crop: :fill}')" %>
+            <% avatar_style = plant.user.photo.blank? ? "background-image: url('https://res.cloudinary.com/dvvkrrjc4/image/upload/v1550842670/Screen_Shot_2019-02-22_at_14.37.36.png')" : "background-image: url('#{cl_image_path plant.user.photo,  crop: :fill}')" %>
             <div class="card-avatar" style="<%= avatar_style %>">
             </div>
       </div>
