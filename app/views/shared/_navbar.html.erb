@@ -1,7 +1,7 @@
  <div class="navbar-container">
  <div class="navbar-wagon">
   <!-- Logo -->
-  <%= link_to "Plant to rent", root_path, class: "navbar-wagon-logo"%>
+  <%= link_to "Plant to rent", plants_path, class: "navbar-wagon-logo"%>
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
     <% if user_signed_in? %>
@@ -20,12 +20,12 @@
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
             <li>
               <%= link_to "#" do %>
-                <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
+                <i class="fa fa-user"></i> <%= t(".profile", default: "Mon profil") %>
               <% end %>
             </li>
             <li>
               <%= link_to destroy_user_session_path, method: :delete do %>
-                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
+                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Se déconnecter") %>
               <% end %>
             </li>
           </ul>

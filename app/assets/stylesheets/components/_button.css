@@ -16,5 +16,10 @@
   border: 1px solid $title;
  }
 
+a h1:visited  { color: $title; }
+a h1:active  { color: $title; }
+p a:visited  { color: $text; }
+p a:active  { color: $text; }
+
 /*code html pour button :
 <a href="#" class="button">Supprimer</a>*/
